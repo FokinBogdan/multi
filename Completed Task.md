@@ -50,10 +50,10 @@
 # CPU-bound. Генерируем монетки
 ## Генерация монетки на 1 ядре
 
-Время работы: ![img.png](Image CPU-bound/img.png)
+Время работы: ![](Image CPU-bound/img.png)
 155723 миллисекунды ≈ 2 минуты 36 секунд
 
-Загрузка процессора: ![img_1.png](Image CPU-bound/img_1.png)
+Загрузка процессора: ![](Image CPU-bound/img_1.png)
 
 Загрузка памяти: ![img_2.png](Image CPU-bound/img_2.png)
 
