@@ -1,24 +1,27 @@
 import concurrent.futures
-import urllib.request
-
-URLS = open('res.txt', encoding='utf8').read().split('\n')
+from urllib.request import Request, urlopen
 
 
-# Retrieve a single page and report the URL and contents
-def load_url(url, timeout):
-    with urllib.request.urlopen(url, timeout=timeout) as conn:
-        return conn.read()
+def check_link(link):
+    try:
+        request = Request(
+            link,
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 9.0; Win65; x64; rv:97.0) Gecko/20105107 Firefox/92.0'},
+        )
+        response = urlopen(request, timeout=5)
+        code = response.code
+        print(code)
+        response.close()
+    except Exception as e:
+        print("Exception occurred. URL: ", link, "Exception:", e)
 
 
-# We can use a with statement to ensure threads are cleaned up promptly
+links = open('res.txt', encoding='utf8').read().split('\n')
 with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
-    # Start the load operations and mark each future with its URL
-    future_to_url = {executor.submit(load_url, url, 60): url for url in URLS}
+    future_to_url = {executor.submit(check_link, link): link for link in links}
     for future in concurrent.futures.as_completed(future_to_url):
-        url = future_to_url[future]
+        link = future_to_url[future]
         try:
             data = future.result()
         except Exception as exc:
-            print('%r generated an exception: %s' % (url, exc))
-        else:
-            print('%r page is %d bytes' % (url, len(data)))
+            print('%r generated an exception: %s' % (link, exc))
