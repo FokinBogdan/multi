@@ -50,53 +50,53 @@
 # CPU-bound. Генерируем монетки
 ## Генерация монетки на 1 ядре
 
-Время работы: ![img.png](CPU-bound/Image CPU-bound/img.png)
+Время работы: 
 155723 миллисекунды ≈ 2 минуты 36 секунд
 
-Загрузка процессора: ![img_1.png](CPU-bound/Image CPU-bound/img_1.png)
+Загрузка процессора: 
 
-Загрузка памяти: ![img_2.png](CPU-bound/Image CPU-bound/img_2.png)
+Загрузка памяти: 
 
 ## ProcessPoolExecutor
 ### max_workers = 2
 
-Время работы: ![img_3.png](CPU-bound/Image CPU-bound/img_3.png)
+Время работы:
 58010 миллисекунды ≈ 58 секунд
 
-Загрузка процессора: ![img_4.png](CPU-bound/Image CPU-bound/img_4.png)
+Загрузка процессора: 
 
-Загрузка памяти: ![img_5.png](CPU-bound/Image CPU-bound/img_5.png)
+Загрузка памяти: 
 
 ### max_workers = 4
 
-Время работы: ![img_6.png](CPU-bound/Image CPU-bound/img_6.png)
+Время работы: 
 126990 миллисекунды ≈ 2 минуты 7 секунд
 
-Загрузка процессора: ![img_7.png](CPU-bound/Image CPU-bound/img_7.png)
+Загрузка процессора: 
 
-Загрузка памяти: ![img_8.png](CPU-bound/Image CPU-bound/img_8.png)
+Загрузка памяти: 
 
 ### max_workers = 5
 
-Время работы: ![img_9.png](CPU-bound/Image CPU-bound/img_9.png)
+Время работы: 
 138878 миллисекунды ≈ 2 минуты 18 секунд
 
-Загрузка процессора: ![img_10.png](CPU-bound/Image CPU-bound/img_10.png)
+Загрузка процессора: 
 
-Загрузка памяти: ![img_11.png](CPU-bound/Image CPU-bound/img_11.png)
+Загрузка памяти: 
 
 ### max_workers = 10
 
-Время работы: ![img_12.png](CPU-bound/Image CPU-bound/img_12.png)
+Время работы: 
 122966 миллисекунды ≈ 2 минуты 3 секунды
 
-Загрузка процессора: ![img_13.png](CPU-bound/Image CPU-bound/img_13.png)
+Загрузка процессора: 
 
-Загрузка памяти: ![img_14.png](CPU-bound/Image CPU-bound/img_14.png)
+Загрузка памяти: 
 
 ### max_workers = 100
 
-Ошибка: ![img_15.png](CPU-bound/Image CPU-bound/img_15.png)
+Ошибка: ![img.png](Image/img_15.png)
 
 
 **Загрузка памяти не зависит от количества "воркеров".
