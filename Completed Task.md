@@ -50,53 +50,53 @@
 # CPU-bound. Генерируем монетки
 ## Генерация монетки на 1 ядре
 
-Время работы: ![](Image CPU-bound/img.png)
+Время работы: ![](CPU-bound/Image CPU-bound/img.png)
 155723 миллисекунды ≈ 2 минуты 36 секунд
 
-Загрузка процессора: ![](Image CPU-bound/img_1.png)
+Загрузка процессора: ![](CPU-bound/Image CPU-bound/img_1.png)
 
-Загрузка памяти: ![img_2.png](Image CPU-bound/img_2.png)
+Загрузка памяти: ![img_2.png](CPU-bound/Image CPU-bound/img_2.png)
 
 ## ProcessPoolExecutor
 ### max_workers = 2
 
-Время работы: ![img_3.png](Image CPU-bound/img_3.png)
+Время работы: ![img_3.png](CPU-bound/Image CPU-bound/img_3.png)
 58010 миллисекунды ≈ 58 секунд
 
-Загрузка процессора: ![img_4.png](Image CPU-bound/img_4.png)
+Загрузка процессора: ![img_4.png](CPU-bound/Image CPU-bound/img_4.png)
 
-Загрузка памяти: ![img_5.png](Image CPU-bound/img_5.png)
+Загрузка памяти: ![img_5.png](CPU-bound/Image CPU-bound/img_5.png)
 
 ### max_workers = 4
 
-Время работы: ![img_6.png](Image CPU-bound/img_6.png)
+Время работы: ![img_6.png](CPU-bound/Image CPU-bound/img_6.png)
 126990 миллисекунды ≈ 2 минуты 7 секунд
 
-Загрузка процессора: ![img_7.png](Image CPU-bound/img_7.png)
+Загрузка процессора: ![img_7.png](CPU-bound/Image CPU-bound/img_7.png)
 
-Загрузка памяти: ![img_8.png](Image CPU-bound/img_8.png)
+Загрузка памяти: ![img_8.png](CPU-bound/Image CPU-bound/img_8.png)
 
 ### max_workers = 5
 
-Время работы: ![img_9.png](Image CPU-bound/img_9.png)
+Время работы: ![img_9.png](CPU-bound/Image CPU-bound/img_9.png)
 138878 миллисекунды ≈ 2 минуты 18 секунд
 
-Загрузка процессора: ![img_10.png](Image CPU-bound/img_10.png)
+Загрузка процессора: ![img_10.png](CPU-bound/Image CPU-bound/img_10.png)
 
-Загрузка памяти: ![img_11.png](Image CPU-bound/img_11.png)
+Загрузка памяти: ![img_11.png](CPU-bound/Image CPU-bound/img_11.png)
 
 ### max_workers = 10
 
-Время работы: ![img_12.png](Image CPU-bound/img_12.png)
+Время работы: ![img_12.png](CPU-bound/Image CPU-bound/img_12.png)
 122966 миллисекунды ≈ 2 минуты 3 секунды
 
-Загрузка процессора: ![img_13.png](Image CPU-bound/img_13.png)
+Загрузка процессора: ![img_13.png](CPU-bound/Image CPU-bound/img_13.png)
 
-Загрузка памяти: ![img_14.png](Image CPU-bound/img_14.png)
+Загрузка памяти: ![img_14.png](CPU-bound/Image CPU-bound/img_14.png)
 
 ### max_workers = 100
 
-Ошибка: ![img_15.png](Image CPU-bound/img_15.png)
+Ошибка: ![img_15.png](CPU-bound/Image CPU-bound/img_15.png)
 
 
 **Загрузка памяти не зависит от количества "воркеров".
