@@ -1,47 +1,47 @@
 # IO-bound. Проверяем ссылки на страницах Википедии
 ## Синхронная проверка в 1 поток
 
-Время работы: ![img.png](img.png)
+Время работы: ![img.png](Image/img.png)
 1151963 миллисекунды ≈ 19 минут 12 секунд.
 
-Загрузка памяти: ![img_1.png](img_1.png)
+Загрузка памяти: ![img_1.png](Image/img_1.png)
 
-Загрузка процессора: ![img_2.png](img_2.png)
+Загрузка процессора: ![img_2.png](Image/img_2.png)
 
 ## ThreadPoolExecutor
 
 ### max_workers = 5
 
-Время работы: ![img_3.png](img_3.png)
+Время работы: ![img_3.png](Image/img_3.png)
 406331 миллисекунд ≈ 6 минут 46 секунд
 
-Загрузка памяти: ![img_4.png](img_4.png)
+Загрузка памяти: ![img_4.png](Image/img_4.png)
 
-Загрузка процессора: ![img_5.png](img_5.png)
+Загрузка процессора: ![img_5.png](Image/img_5.png)
 
-Загрузка сети Internet: ![img_14.png](img_14.png)
+Загрузка сети Internet: ![img_14.png](Image/img_14.png)
 
 ### max_workers = 10
 
-Время работы: ![img_6.png](img_6.png)
+Время работы: ![img_6.png](Image/img_6.png)
 233960 миллисекунд ≈ 3 минуты 54 секунды
 
-Загрузка памяти: ![img_7.png](img_7.png)
+Загрузка памяти: ![img_7.png](Image/img_7.png)
 
-Загрузка процессора: ![img_8.png](img_8.png)
+Загрузка процессора: ![img_8.png](Image/img_8.png)
 
-Загрузка сети Internet: ![img_13.png](img_13.png)
+Загрузка сети Internet: ![img_13.png](Image/img_13.png)
 
 ### max_workers = 100
 
-Время работы: ![img_9.png](img_9.png)
+Время работы: ![img_9.png](Image/img_9.png)
 179049 миллисекунд ≈ 2 минуты 59 секунд
 
-Загрузка памяти: ![img_10.png](img_10.png)
+Загрузка памяти: ![img_10.png](Image/img_10.png)
 
-Загрузка процессора: ![img_11.png](img_11.png)
+Загрузка процессора: ![img_11.png](Image/img_11.png)
 
-Загрузка сети Internet: ![img_12.png](img_12.png)
+Загрузка сети Internet: ![img_12.png](Image/img_12.png)
 
 **Загрузка памяти не зависит от количества "воркеров".
 При увеличении числа "воркеров": загрузка проццесора - увеличивается, загрузка сети Internet - увеличивается, время работы программы - уменьшается.
