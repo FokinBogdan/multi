@@ -55,7 +55,7 @@
 
 Загрузка процессора: ![](CPU-bound/Image CPU-bound/img_1.png)
 
-Загрузка памяти: ![img_2.png](CPU-bound/Image CPU-bound/img_2.png)
+Загрузка памяти: ![](CPU-bound/Image CPU-bound/img_2.png)
 
 ## ProcessPoolExecutor
 ### max_workers = 2
